@@ -1,4 +1,4 @@
-class CollectionToString
+class CollectionToHeadings
 
   def initialize(collection)
     @collection = collection
@@ -58,6 +58,6 @@ COLLECTION_3 = [
   { id: 6, title: "heading6", heading_level: 1 }
 ]
 
-CollectionToString.new(COLLECTION_1).print
-CollectionToString.new(COLLECTION_2).print
-CollectionToString.new(COLLECTION_3).print
+CollectionToHeadings.new(COLLECTION_1).print
+CollectionToHeadings.new(COLLECTION_2).print
+CollectionToHeadings.new(COLLECTION_3).print
