@@ -58,6 +58,9 @@ COLLECTION_3 = [
   { id: 6, title: "heading6", heading_level: 1 }
 ]
 
+p "Test Collection 1"
 CollectionToHeadings.new(COLLECTION_1).print
+p "Test Collection 2"
 CollectionToHeadings.new(COLLECTION_2).print
+p "Test Collection 3"
 CollectionToHeadings.new(COLLECTION_3).print
