@@ -24,6 +24,9 @@ class CollectionToHeadings
     #replace nils with 1s
     @headings_count = @headings_count.map { |count| count ? count : 1 }
 
+    #reset headings count of headings above current one
+    @headings_count.pop(@headings_count.length - heading_level - 1)
+
     #return string for the current heading level
     @headings_count.first(heading_level + 1).join('.')
   end
