@@ -22,7 +22,7 @@ class CollectionToHeadings
     @headings_count[heading_level] = @headings_count[heading_level].to_i + 1
 
     #replace nils with 1s
-    @headings_count = @headings_count.map { |count| count ? count : 1 }
+    @headings_count.map! { |count| count ? count : 1 }
 
     #reset headings count of headings above current one
     @headings_count.pop(@headings_count.length - heading_level - 1)
